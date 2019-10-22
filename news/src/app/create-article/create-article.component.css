@@ -1,0 +1,18 @@
+.create-article-title {
+  text-align: center;
+  font-style: italic;
+}
+.form-container {
+  padding: 15px;
+  width: 40%;
+  margin: 0 auto;
+  border: 2px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.form-column {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}

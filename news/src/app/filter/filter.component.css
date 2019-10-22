@@ -1,0 +1,12 @@
+.input-filter {
+  align-self: center;
+  border-radius: 3px;
+  height: 20px;
+}
+.filter {
+  border-radius: 5px;
+  height: 20px;
+}
+.filter:hover {
+  cursor: pointer;
+}

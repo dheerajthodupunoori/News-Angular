@@ -1,0 +1,56 @@
+<div>
+  <h2 class="create-article-title">Create Article</h2>
+  <hr />
+  <form #createArticleForm="ngForm">
+    <!-- {{ createArticleForm.value | json }}
+    <hr />
+    {{ article | json }} -->
+    <div class="form-container">
+      <div class="form-column">
+        <div>
+          <label>Title</label><br /><input
+            type="text"
+            name="title"
+            [(ngModel)]="article.title"
+          />
+        </div>
+        <div>
+          <label>Short description</label><br /><input
+            type="text"
+            name="description"
+            [(ngModel)]="article.description"
+          />
+        </div>
+        <div>
+          <button (click)="addToArticles()">Save</button>
+          <a routerLink="/newsFeed"
+            ><button (click)="confirmBeforeNavigate()">Cancel</button></a
+          >
+        </div>
+      </div>
+      <div class="form-column">
+        <div>
+          <label>Date</label><br /><input
+            type="date"
+            name="publishedAt"
+            [(ngModel)]="article.publishedAt"
+          />
+        </div>
+        <div>
+          <label>Author</label><br /><input
+            type="text"
+            name="author"
+            [(ngModel)]="article.author"
+          />
+        </div>
+        <div>
+          <label>Source URL</label><br /><input
+            type="text"
+            name="urlToImage"
+            [(ngModel)]="article.urlToImage"
+          /><br />
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

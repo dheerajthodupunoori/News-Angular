@@ -1,0 +1,31 @@
+.news-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: cadetblue;
+  padding: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+.feed-main-container {
+  margin-top: 20px;
+}
+.article-date {
+  align-self: center;
+}
+.news-content {
+  align-self: center;
+  width: 600px;
+}
+.news-image {
+  height: 200px;
+  width: 200px;
+}
+.continue-reading {
+  border-radius: 5px;
+  text-align: center;
+  padding: 4px;
+}
+.continue-reading:hover {
+  cursor: pointer;
+}

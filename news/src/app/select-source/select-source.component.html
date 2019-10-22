@@ -1,0 +1,9 @@
+<select
+  class="select-source"
+  (change)="sourceChanged(selectedSourceId)"
+  [(ngModel)]="selectedSourceId"
+>
+  <option *ngFor="let channel of channels" [value]="channel.id">
+    {{ channel.name }}
+  </option>
+</select>

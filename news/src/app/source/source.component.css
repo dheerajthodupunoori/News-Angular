@@ -1,0 +1,21 @@
+.source-name {
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.add-article {
+  border-radius: 5px;
+  height: 30px;
+  align-self: center;
+  font-size: 15px;
+  text-align: center;
+}
+.add-article:hover {
+  cursor: pointer;
+  background-color: chartreuse;
+}
+app-select-source {
+  align-self: center;
+}

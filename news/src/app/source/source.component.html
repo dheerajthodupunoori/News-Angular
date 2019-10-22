@@ -1,0 +1,18 @@
+<div>
+  <h3 class="source-name">{{ sourceName | uppercase }}</h3>
+  <hr />
+  <div class="container">
+    <app-select-source
+      (sendArticlesToNewsfeedComponent)="articles = $event"
+    ></app-select-source>
+    <app-filter (sendSearchStringToParent)="searchString = $event"></app-filter>
+    <a routerLink="/addArticle/{{ sourceName }}"
+      ><button class="add-article">Add Article</button></a
+    >
+  </div>
+  <hr />
+</div>
+<app-news-feed
+  *ngFor="let article of articles | filter: searchString"
+  [article]="article"
+></app-news-feed>

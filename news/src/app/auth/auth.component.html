@@ -1,0 +1,33 @@
+<div class="container">
+  <img src="../../assets/news-icon.jpeg" class="logo" />
+  <button
+    *ngIf="!isLoggedIn; else logout"
+    class="login"
+    (click)="showLogInForm()"
+  >
+    LogIn
+  </button>
+  <ng-template #logout>
+    <h3>{{ loggedInUser }}</h3>
+    <button class="login" (click)="logOut()">LogOut</button>
+  </ng-template>
+</div>
+<hr />
+
+<div class="login-container" *ngIf="displayLogInForm">
+  <form #loginForm="ngForm">
+    <div class="form-container">
+      <div class="form-column">
+        <label>UserName</label
+        ><input type="text" name="userName" [(ngModel)]="user.UserName" />
+      </div>
+      <div class="form-column">
+        <label>Password</label
+        ><input type="password" name="Password" [(ngModel)]="user.Password" />
+      </div>
+      <button (click)="validateUser()">Submit</button>
+    </div>
+  </form>
+  <br />
+  <strong class="invalid-user-message">{{ errorMessage }}</strong>
+</div>

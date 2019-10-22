@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+}
+.login {
+  border-radius: 5px;
+  height: 30px;
+  align-self: center;
+  font-size: 15px;
+  text-align: center;
+}
+.login:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+}
+.login-container {
+  text-align: center;
+  padding: 20px;
+  margin-top: 100px;
+}
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.invalid-user-message {
+  color: red;
+}

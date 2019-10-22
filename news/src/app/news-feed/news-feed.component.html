@@ -1,0 +1,12 @@
+<div class="feed-main-container">
+  <div class="news-container">
+    <img src="{{ article.urlToImage }}" class="news-image" />
+    <div class="news-content">
+      <h3>{{ article.title }}</h3>
+      <button class="continue-reading">Continue reading</button>
+    </div>
+    <span class="article-date"
+      ><strong>Published On:</strong>{{ article.publishedAt | date }}</span
+    >
+  </div>
+</div>
